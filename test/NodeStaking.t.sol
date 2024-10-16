@@ -239,12 +239,5 @@ contract TestNodeStaking is Test {
         nodeStaking.unstake(20e9); // Remaining stake amount
         assertEq(nodeToken.balanceOf(user1),balanceBefore + 20e9 + 3e9); // Balance before + Staked amount + New rewards
         assertEq(nodeStaking.stakerCount(), 0); // Stakers count decreases as user1 has unstaked all his staked tokens
-
     }
-    
-
-    
-
-
-
 }
