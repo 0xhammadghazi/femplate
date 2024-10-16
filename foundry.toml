@@ -5,7 +5,7 @@ out = 'out'
 libs = ['lib']
 
 auto_detect_solc = false
-solc = '0.8.17'
+solc = '0.8.15'
 optimizer = true
 optimizer_runs = 10_000
 
@@ -14,6 +14,8 @@ verbosity = 2
 
 [rpc_endpoints]
 mainnet = "${MAINNET_RPC_URL}"
+arb_sepolia = "${ARBITRUM_SEPOLIA_RPC_URL}"
+
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}" }
